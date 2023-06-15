@@ -133,5 +133,5 @@ def simulateNewRatings(cholesky, issuers, n=1):
     simRatings.columns = ["Sim " + str(i) for i in range(1, n+1)]
     return simRatings
 
-
-# newRatings = simulateNewRatings(cholesky_np, issuers_df, 2000)
+if __name__ == "__main__":
+  newRatings = simulateNewRatings(cholesky_np, issuers_df, 2000)
